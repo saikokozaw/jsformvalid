@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Send Email</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css"/>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div id="page">
+        <h2>Contact Me Now</h2>
+        <form method="POST" id="contactform">
+            <label for="name">Full Name</label>
+            <input id="name" type="text" name="name">
+
+            <label for="email">Email</label>
+            <input id="email" type="email" name="email">
+
+            <label for="comment">Comments</label>
+            <textarea id="comment" name="comment" rows="7"></textarea>
+
+            <input type="submit" name="send" class="submitBtn" value="Send it to me">
+        </form>
+
+        <div id="message" class="hide-message">
+            <div class="error">
+                <h3>Oops</h3>
+                <p>You forgot to give me a valid email address. Please fix that and try again</p>
+            </div>
+        </div>
+
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
